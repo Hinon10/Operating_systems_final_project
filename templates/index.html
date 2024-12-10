@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webster University Courses</title>
+    <link rel="stylesheet"  type="text/css" href="{{url_for('.static', filename='index.css')}}">
+</head>
+<body>
+    <h1>Welcome, Anton!</h1>
+    <h2>University Courses</h2>
+    <form action="courses" method="GET">
+        <label for="level">Choose a level:</label>
+        <select name="level" id="level">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
